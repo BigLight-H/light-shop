@@ -11,7 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-//    return view('welcome');
-    echo test();
-});
+Route::get('/', 'PagesController@root')->name('pages.root');
+Route::get('/index', 'PagesController@index')->name('layouts.app');
