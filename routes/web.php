@@ -11,5 +11,6 @@
 |
 */
 
-Route::get('/', 'PagesController@root')->name('pages.root');
-Auth::routes();
+Route::get('/', 'PagesController@root')->name('root');
+Auth::routes(['verify' => true]);
+
