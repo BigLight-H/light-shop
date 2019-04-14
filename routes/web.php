@@ -12,4 +12,4 @@
 */
 
 Route::get('/', 'PagesController@root')->name('pages.root');
-Route::get('/index', 'PagesController@index')->name('layouts.app');
+Auth::routes();
